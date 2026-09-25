@@ -1,0 +1,34 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+.DS_Store
+Thumbs.db
+
+tmp/
+.tmp/
+release/
+
+# Reproducible local build and audit outputs. The public repository contains
+# the builder/configuration project; large generated KB artifacts are released
+# separately.
+_source_cache/
+20??-??-??/
+christian_kb_manifest.*
+christian_kb_author_evidence_*.jsonl
+christian_kb_crossbook_evidence_*.jsonl
+christian_kb_evidence_archival_*.jsonl
+christian_kb_evidence_extended_*.jsonl
+christian_kb_evidence_primary_*.jsonl
+christian_kb_id_redirects.jsonl
+christian_kb_page_blocks_*.jsonl
+christian_kb_pages_*.jsonl
+christian_kb_scripture_concordance_*.jsonl
+christian_kb_sections_*.jsonl
+christian_kb_source_packages_manifest.jsonl
+christian_kb_source_registry.jsonl
+christian_kb_sources.csv
+christian_kb_term_catalog.jsonl
+christian_kb_term_concordance_*.jsonl
+attested_anchor_terms.*
+term_discovery_anchor_review*.csv

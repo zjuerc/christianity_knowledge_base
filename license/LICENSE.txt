@@ -1,0 +1,118 @@
+CHRISTIAN THEOLOGY KNOWLEDGE BASE NON-COMMERCIAL LICENSE
+Version 1.0 — 24 September 2026
+
+Copyright © 2026 Christian Theology Knowledge Base contributors.
+
+IMPORTANT NOTICE
+This license governs only the original source code, configuration,
+documentation, and other materials created for this project by the copyright
+holders identified above. It does not replace, restrict, or supersede any
+license or other legal right applicable to third-party source materials,
+including PDF editions, CCEL-derived text, introductions, cover art, or other
+publisher content described in THIRD-PARTY-NOTICES.txt.
+
+1. DEFINITIONS
+
+"Licensed Work" means the original source code, configuration, documentation,
+and other copyrightable materials of the Christian Theology Knowledge Base
+that are owned or controlled by the Licensor and distributed with this notice.
+
+"You" means the individual or legal entity exercising rights under this
+License.
+
+"Modify" means to copy from, adapt, translate, revise, restructure, or create
+a derivative work based on the Licensed Work.
+
+"Commercial Purpose" means a purpose primarily intended for commercial
+advantage, monetary compensation, revenue generation, business operations, or
+financial benefit. This includes sale, rental, paid distribution, subscription
+access, monetized hosting, advertising-supported distribution, incorporation
+into a paid product or service, or use by or for a for-profit organization.
+
+2. NON-COMMERCIAL LICENSE GRANT
+
+Subject to this License, the Licensor grants You a worldwide, non-exclusive,
+royalty-free, non-transferable license to use, reproduce, Modify, and
+redistribute the Licensed Work, in source or compiled form, solely for
+non-commercial purposes.
+
+You may distribute the Licensed Work or a Modified version without charge,
+provided that You comply with this License and preserve applicable copyright,
+attribution, warranty, and third-party notices.
+
+3. COMMERCIAL RESTRICTION
+
+You must not directly or indirectly use, reproduce, Modify, distribute,
+publish, host, sublicense, sell, license, rent, lease, monetize, or otherwise
+exploit the Licensed Work for a Commercial Purpose.
+
+You must not charge a fee or receive monetary compensation for access to,
+distribution of, support for, or functionality materially derived from the
+Licensed Work. You must not place the Licensed Work behind a paywall or use it
+to operate an advertising-funded or revenue-generating service.
+
+4. REDISTRIBUTION CONDITIONS
+
+Every copy or redistribution of the Licensed Work, whether unmodified or
+Modified, must:
+
+(a) include a complete copy of this License;
+(b) retain applicable copyright, attribution, and disclaimer notices;
+(c) clearly identify material changes; and
+(d) include THIRD-PARTY-NOTICES.txt and applicable third-party license texts
+    whenever corresponding third-party materials are redistributed.
+
+You must not represent that the Licensor endorses, sponsors, or guarantees
+Your Modified version or Your use of the Licensed Work.
+
+5. THIRD-PARTY MATERIALS
+
+Third-party materials are governed solely by their respective licenses or
+other applicable rights. This License does not impose terms on third-party
+materials and does not grant permission to copy or redistribute them.
+
+CCEL policy information is descriptive guidance, not a license granted by the
+Licensor. You are responsible for determining and complying with the rights
+applicable to each source edition, including restrictions on introductions,
+cover art, special contents, publisher-protected works, and rights that differ
+by jurisdiction.
+
+6. TERMINATION
+
+The rights granted by this License terminate automatically upon Your breach of
+any term. Rights terminate for a particular copy or Modified version if You
+fail to cure a material breach within thirty (30) days after written notice.
+Upon termination, You must cease exercising the rights granted by this License
+and remove copies distributed in breach, except that lawful recipients who are
+not themselves in breach retain their rights.
+
+7. NO TRADEMARK LICENSE
+
+This License grants no right to use project names, logos, marks, or branding,
+except as necessary to make accurate factual attribution.
+
+8. DISCLAIMER OF WARRANTY
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE LICENSED WORK IS PROVIDED "AS IS"
+AND "AS AVAILABLE," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+TITLE, NON-INFRINGEMENT, ACCURACY, OR QUIET ENJOYMENT.
+
+9. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, NO LICENSOR OR CONTRIBUTOR WILL BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES, INCLUDING LOSS OF PROFITS, REVENUE, DATA, GOODWILL, OR
+BUSINESS INTERRUPTION, ARISING OUT OF OR RELATING TO THIS LICENSE OR THE
+LICENSED WORK.
+
+10. RESERVATION OF RIGHTS
+
+All rights not expressly granted by this License are reserved by the Licensor.
+Nothing in this License limits rights that cannot lawfully be limited or
+waived, including applicable fair-use, fair-dealing, public-domain, or other
+statutory rights.
+
+This is a custom source-available license. It is not the GNU General Public
+License, is not intended to be GNU GPL-compatible, and should not be described
+as an open-source license because it prohibits commercial use.

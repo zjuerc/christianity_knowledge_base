@@ -1,0 +1,28 @@
+CHRISTIAN THEOLOGY KNOWLEDGE BASE THIRD-PARTY NOTICES
+
+1. GENERATED KNOWLEDGE-BASE CONTENT
+
+The generated knowledge base contains text, metadata, page images or layout
+information, and source references derived from supplied PDF editions. The
+project license applies only to original project code, configuration, and
+documentation. It does not relicense the generated source-derived content.
+
+Users must determine the rights applicable to each edition and jurisdiction
+before copying, publishing, or commercially using generated data.
+
+2. CHRISTIAN CLASSICS ETHEREAL LIBRARY (CCEL)
+
+Some source editions and derived records may originate from or be based on
+CCEL editions. CCEL copyright and usage information is recorded separately in
+`CCEL-Copyright-Policy.txt`.
+
+CCEL states that many editions are based on books that are public domain in the
+United States, while introductions, cover art, special contents, and some
+publisher-protected works may remain copyrighted or be used by permission.
+CCEL describes personal, educational, and non-profit use as permitted and
+directs users to contact CCEL for permission to republish works or use them
+commercially. Copyright law may differ in other countries.
+
+This notice does not grant rights in CCEL materials and does not determine the
+status of any individual work. Consult the applicable CCEL book information and
+rights holders before redistribution.

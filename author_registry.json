@@ -1,0 +1,347 @@
+[
+  {
+    "canonical_author": "Hermas",
+    "aliases": ["hermas", "pastor of hermas", "shepherd of hermas"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Clement of Rome",
+    "aliases": ["clement of rome", "clement"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Mathetes",
+    "aliases": ["mathetes", "diognetus"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Polycarp",
+    "aliases": ["polycarp"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Ignatius of Antioch",
+    "aliases": ["ignatius"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Barnabas",
+    "aliases": ["barnabas"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Papias",
+    "aliases": ["papias"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Justin Martyr",
+    "aliases": ["justin martyr", "justin"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Irenaeus of Lyons",
+    "aliases": ["irenaeus", "iren\u00e6us"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Tatian",
+    "aliases": ["tatian"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Theophilus of Antioch",
+    "aliases": ["theophilus"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Athenagoras",
+    "aliases": ["athenagoras"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Clement of Alexandria",
+    "aliases": ["clement of alexandria"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Tertullian",
+    "aliases": ["tertullian"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Minucius Felix",
+    "aliases": ["minucius felix"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Commodianus",
+    "aliases": ["commodianus"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Origen",
+    "aliases": ["origen"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Hippolytus of Rome",
+    "aliases": ["hippolytus"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Cyprian of Carthage",
+    "aliases": ["cyprian"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Novatian",
+    "aliases": ["novatian"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Gregory Thaumaturgus",
+    "aliases": ["gregory thaumaturgus", "thaumaturgus"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Dionysius of Alexandria",
+    "aliases": ["dionysius"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Julius Africanus",
+    "aliases": ["africanus"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Anatolius",
+    "aliases": ["anatolius"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Alexander of Cappadocia",
+    "aliases": ["alexander of cappadocia"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Methodius",
+    "aliases": ["methodius"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Arnobius",
+    "aliases": ["arnobius"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Lactantius",
+    "aliases": ["lactantius"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Venantius",
+    "aliases": ["venantius"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Asterius Urbanus",
+    "aliases": ["asterius urbanus"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Victorinus",
+    "aliases": ["victorinus"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Dionysius of Rome",
+    "aliases": ["dionysius of rome"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Augustine of Hippo",
+    "aliases": ["augustine", "augustin", "st. augustin", "st. augustine"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "John Chrysostom",
+    "aliases": ["chrysostom", "st. chrysostom", "john chrysostom"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Eusebius of Caesarea",
+    "aliases": ["eusebius"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Socrates Scholasticus",
+    "aliases": ["socrates"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Sozomen",
+    "aliases": ["sozomen"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Theodoret",
+    "aliases": ["theodoret"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Jerome",
+    "aliases": ["jerome", "hieronymus"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Rufinus",
+    "aliases": ["rufinus"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Athanasius of Alexandria",
+    "aliases": ["athanasius"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Gregory of Nyssa",
+    "aliases": ["gregory of nyssa"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Gregory Nazianzen",
+    "aliases": ["gregory nazianzen", "gregory nazianzus"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Cyril of Jerusalem",
+    "aliases": ["cyril of jerusalem"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Basil of Caesarea",
+    "aliases": ["basil"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Hilary of Poitiers",
+    "aliases": ["hilary"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "John of Damascus",
+    "aliases": ["john of damascus"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Ambrose of Milan",
+    "aliases": ["ambrose"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Sulpitius Severus",
+    "aliases": ["sulpitius severus"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Vincent of Lerins",
+    "aliases": ["vincent of lerins"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "John Cassian",
+    "aliases": ["cassian"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Leo the Great",
+    "aliases": ["leo the great"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Gregory the Great",
+    "aliases": ["gregory the great"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Ephraim the Syrian",
+    "aliases": ["ephraim"],
+    "folder_hints": []
+  },
+  {
+    "canonical_author": "Abraham Kuyper",
+    "aliases": ["abraham kuyper", "kuyper"],
+    "folder_hints": ["Abraham Kuyper"]
+  },
+  {
+    "canonical_author": "Charles Haddon Spurgeon",
+    "aliases": ["charles haddon spurgeon", "charles spurgeon", "c. h. spurgeon", "spurgeon"],
+    "folder_hints": ["Charles Haddon Spurgeon"]
+  },
+  {
+    "canonical_author": "Charles Hodge",
+    "aliases": ["charles hodge", "hodge"],
+    "folder_hints": ["Charles Hodge"]
+  },
+  {
+    "canonical_author": "Herman Bavinck",
+    "aliases": ["herman bavinck", "bavinck"],
+    "folder_hints": ["Herman Bavinck"]
+  },
+  {
+    "canonical_author": "John Charles Ryle",
+    "aliases": ["john charles ryle", "j. c. ryle", "j.c. ryle", "jc ryle", "ryle"],
+    "folder_hints": ["J. C. Ryle"]
+  },
+  {
+    "canonical_author": "John Bunyan",
+    "aliases": ["john bunyan", "bunyan"],
+    "folder_hints": ["John Bunyan"]
+  },
+  {
+    "canonical_author": "John Henry Newman",
+    "aliases": ["john henry newman", "j. h. newman", "newman"],
+    "folder_hints": ["John Henry Newman"]
+  },
+  {
+    "canonical_author": "John Owen",
+    "aliases": ["john owen", "owen"],
+    "folder_hints": ["John Owen"]
+  },
+  {
+    "canonical_author": "John Wesley",
+    "aliases": ["john wesley", "wesley"],
+    "folder_hints": ["John Wesley"]
+  },
+  {
+    "canonical_author": "Jonathan Edwards",
+    "aliases": ["jonathan edwards", "edwards"],
+    "folder_hints": ["Jonathan Edwards"]
+  },
+  {
+    "canonical_author": "Louis Berkhof",
+    "aliases": ["louis berkhof", "berkhof"],
+    "folder_hints": ["Louis Berkhof"]
+  },
+  {
+    "canonical_author": "Philip Schaff",
+    "aliases": ["philip schaff", "schaff"],
+    "folder_hints": ["Philip Schaff"]
+  },
+  {
+    "canonical_author": "Martin Luther",
+    "aliases": ["martin luther", "luther"],
+    "folder_hints": ["Martin Luther"]
+  },
+  {
+    "canonical_author": "John Calvin",
+    "aliases": ["john calvin", "calvin"],
+    "folder_hints": ["John Calvin"]
+  },
+  {
+    "canonical_author": "Thomas Aquinas",
+    "aliases": ["thomas aquinas", "aquinas"],
+    "folder_hints": ["Thomas Aquinas"]
+  }
+]
