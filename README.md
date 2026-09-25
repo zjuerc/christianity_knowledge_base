@@ -65,6 +65,18 @@ python .\source_faithful_kb.py --validate-only
 The build is source-faithful: PDF text, page hashes, and evidence content are
 not replaced with outside summaries or generated interpretations.
 
+## Application: Theologia Search
+
+One application of this knowledge base is building the searchable SQLite index
+for [Theologia Search](https://github.com/zjuerc/theologia_search), a
+deterministic retrieval application for source-faithful Christian theological
+evidence. After obtaining a compatible KB release, build the index from the
+Theologia Search project with:
+
+```powershell
+python .\build_index.py --kb-dir "..\knowledge_base"
+```
+
 ## Author attribution
 
 For ordinary first-level `raw_documents` folders, the folder name is resolved
