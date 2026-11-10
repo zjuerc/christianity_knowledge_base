@@ -1,0 +1,4 @@
+pypdf>=5.0,<7
+pdfplumber>=0.11,<0.12
+# Pagination-only margin inspection; not used for evidence extraction.
+PyMuPDF>=1.26,<1.27

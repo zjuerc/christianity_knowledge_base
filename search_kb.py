@@ -12,6 +12,7 @@ import textwrap
 from pathlib import Path
 
 import kb_common as common
+import page_locations
 
 
 ROOT = Path(__file__).resolve().parent
@@ -501,6 +502,9 @@ def result_from_evidence(
         "page_number": page_number,
         "page_start": evidence.get("page_start") or evidence.get("page_number") or location.get("page_number"),
         "page_end": evidence.get("page_end") or evidence.get("page_number") or location.get("page_number"),
+        "source_spans": evidence.get("source_spans", []),
+        "printed_page_number": evidence.get("printed_page_number"),
+        "printed_page_numbers": evidence.get("printed_page_numbers", []),
         "evidence_id": evidence.get("evidence_id") or location.get("evidence_id"),
         "text_role": evidence.get("text_role") or BODY_ROLE,
         "text_status": evidence.get("text_status") or "",
@@ -721,16 +725,12 @@ def print_readable(results: list[dict], args: argparse.Namespace, source_ids: se
         source = row["source_id"]
         title = row["source_title"]
         author = row["author"] or "Unknown"
-        page = row["page_number"]
-        page_range = ""
-        if row.get("page_start") and row.get("page_end") and row.get("page_start") != row.get("page_end"):
-            page_range = f"-{row['page_end']}"
         evidence_id = row["evidence_id"]
         count = row["occurrence_count"]
         count_label = "source occurrences" if row.get("occurrence_scope") == "source" else "occurrences"
         print()
         print(
-            f"{index}. {source} p.{page}{page_range} | {author} | "
+            f"{index}. {source} | {page_locations.format_page_locations(row)} | {author} | "
             f"{row.get('text_role', BODY_ROLE)} | {evidence_id} | {count_label}: {count}"
         )
         if title:
@@ -865,6 +865,19 @@ def main(argv: list[str] | None = None) -> int:
         )
 
     results.sort(key=sort_key)
+
+    displayed = results[:args.limit]
+    # Cross-book aggregates carry occurrence locations; recover evidence spans
+    # rather than assuming their first page is the complete evidence range.
+    missing = {row["evidence_id"] for row in displayed if "source_spans" not in row and row.get("evidence_id")}
+    if missing:
+        lookup = load_evidence_by_id(selected_evidence_paths(manifest, "all", True), missing)
+        for row in displayed:
+            evidence = lookup.get(row.get("evidence_id"), {})
+            for key in ("source_spans", "page_start", "page_end", "printed_page_number", "printed_page_numbers"):
+                if key in evidence:
+                    row[key] = evidence[key]
+    page_locations.attach_page_locations(KB_DIR, manifest, displayed)
 
     if args.jsonl:
         print_jsonl(results, args.limit)

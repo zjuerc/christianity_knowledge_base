@@ -218,3 +218,13 @@ Hide snippets:
 ```powershell
 .\knowledge_base\search_kb.py --term grace --no-snippet
 ```
+## Explicit page numbering
+
+`page_number` is a 1-based PDF file position. Results additionally include
+`page_start`, `page_end`, legacy `printed_page_number(s)`, and `page_locations`.
+Use `page_locations` for verified Header/footer page numbers and printed book references.
+Readable output labels each numbering system separately. For evidence spanning
+multiple PDF pages, the list preserves each page's labels rather than applying
+a single numeric offset. Printed book references are observations on those PDF
+pages, not a guaranteed pinpoint for the quoted words. Missing metadata is
+reported explicitly and never replaced with a guessed number.

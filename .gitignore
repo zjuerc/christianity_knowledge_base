@@ -13,6 +13,11 @@ release/
 # the builder/configuration project; large generated KB artifacts are released
 # separately.
 _source_cache/
+_pagination_cache/
+christian_kb_page_locations.jsonl
+pagination_coverage.json
+pagination_update_report.md
+*.before-pagination
 20??-??-??/
 christian_kb_manifest.*
 christian_kb_author_evidence_*.jsonl

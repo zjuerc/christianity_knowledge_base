@@ -90,7 +90,75 @@ Ordinary name mentions remain mentioned-author metadata; they do not become
 work authors without authorship evidence. Uncertain attribution is retained as
 `Unknown` rather than deleting evidence.
 
-## Search
+## Page numbers and incremental pagination
+
+The public labels are **PDF file page**, **Header/footer page**, and
+**Printed book reference**, with natural plurals for ranges. For example:
+`PDF file page: 818 · Header/footer page: 768 · Printed book reference: 358`.
+The printed book reference is a number shown in the PDF margin and may not
+pinpoint every word of the cited passage. `pagination.display_labels` in the
+manifest stores the labels and descriptions; existing JSONL field names stay
+compatible.
+
+To refresh descriptions only, without scanning PDFs or rewriting JSONL:
+
+```powershell
+python .\page_locations.py --refresh-labels
+python ..\theologia_search\pagination.py --kb-dir . --labels-only
+```
+
+`page_number`, `page_start`, and `page_end` always refer to PDF file positions,
+counted from 1. The optional `christian_kb_page_locations.jsonl` extension stores
+the Header/footer page number and printed book references in the margin separately.
+Search output exposes these records as `page_locations`. The older
+`printed_page_number(s)` fields are retained as legacy extraction data and can
+contain mixed labels; use the verified extension for citations.
+
+Printed book references describe what is visibly marked on the cited PDF page,
+not an inferred pinpoint for every word of an evidence passage. Missing,
+unavailable, and unresolved labels are explicit. Roman numerals, numbering
+resets, and multiple printed book references on one PDF page are preserved.
+PDF viewer page labels and calculated offsets are not used as evidence.
+
+Each `page_locations` entry has `source_id`, `source_format` (`pdf`),
+`pdf_page_number` (1-based integer), `pdf_sha256`,
+`pdf_edition_page_number` (string or null), `original_book_page_numbers`
+(ordered strings), `pdf_edition_status`, `original_book_status`, and
+`observations` with label text, bounding box, method, and verification status.
+Statuses are `verified`, `not_marked`, `unavailable`, or `unresolved`.
+Observations excluded as TOC/heading/footnote numerals retain an explicit reason;
+they do not become page labels. Readers without this extension still show PDF
+file positions and report visible numbering as unavailable.
+
+To add pagination to an existing downloaded/released bundle without rebuilding:
+
+```powershell
+python -m pip install -r .\requirements.txt
+python .\page_locations.py
+python ..\theologia_search\pagination.py --kb-dir .
+```
+
+The first command above installs processing dependencies; the two scripts only
+add pagination metadata. They do not invoke the KB builder or reindex terms.
+Keep the original release archive. The migration backs up the SQLite database
+and index manifest before updating them; the pagination script saves the prior
+KB manifest. `pagination_coverage.json` reports verified/missing/unresolved
+coverage. `_pagination_cache/` checkpoints one source at a time; rerunning is safe.
+
+Future runs of the ordinary PDF builder retain fingerprint-matching pagination
+and inspect pagination for new or changed PDFs automatically. Intentional future
+Theologia Search index builds also import the extension. If only pagination
+changed, use `check_index_sync.py --sync-pagination`, not a full index rebuild.
+The pagination schema and digest are versioned independently of evidence caches.
+
+PDFs are the currently supported input format. Pagination records include
+`source_format` so future importers can describe real fixed-page locations;
+EPUB/Word/plain-text ingestion is not implemented by this update. A future
+format without stable pages must use its native locator, not fabricate PDF pages.
+Unrecognized PDF layouts retain unresolved observations for review. Image-only
+pages remain unavailable until an explicit OCR workflow is added.
+
+## Search usage
 
 After a KB bundle is available locally, run:
 

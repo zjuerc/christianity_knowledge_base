@@ -13,6 +13,7 @@ import pdfplumber
 from pypdf import PdfReader
 
 import kb_common as legacy
+import page_locations
 
 
 WORKSPACE = legacy.WORKSPACE
@@ -3133,7 +3134,12 @@ def assemble_bundle(active_source_ids, previous_registry=None):
             "logic_shorthand",
         ],
     }
+    page_locations.preserve_extension(OUT_DIR, manifest)
     write_json(OUT_DIR / "christian_kb_manifest.json", manifest)
+    # Independently versioned metadata: unchanged sources reuse existing records;
+    # only new/changed PDFs have their pagination inspected. No cache invalidation.
+    page_locations.refresh(OUT_DIR)
+    manifest = read_json(OUT_DIR / "christian_kb_manifest.json", {})
     cleanup_deprecated_outputs()
     return manifest
 
@@ -3239,6 +3245,7 @@ def generated_file_records(path):
 
 def validate_global_bundle(manifest, active_source_ids):
     errors = []
+    errors.extend(page_locations.validate_extension(OUT_DIR, manifest))
     source_ids = set(active_source_ids)
     all_supplied_source_ids = {
         legacy.source_id_for(path) for path in legacy.pdf_paths()
