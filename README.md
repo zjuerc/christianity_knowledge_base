@@ -34,10 +34,39 @@ concordances, and manifests. These generated files are intentionally excluded
 from ordinary Git history because they are large derived artifacts. The
 original PDFs are also not included in this repository.
 
-The complete generated bundle is intended to be released separately, for
-example as a GitHub Release archive. A release archive should include every
-`christian_kb_*` file, including `christian_kb_manifest.json`, and must not
-include `_source_cache/`, dated audit folders, or the original PDFs.
+The complete generated bundle is released separately as a data-only archive.
+Select files from `christian_kb_manifest.json`, plus the explicitly supported
+registries, configuration, Markdown manifest, and generated release README.
+Do not use a broad `christian_kb_*` glob: it can accidentally include manifest
+backups. Exclude PDFs, Python source, `_source_cache/`, `_pagination_cache/`,
+audit reports, backups, temporary files, SQLite databases, and installers.
+
+## Package an existing KB release
+
+```powershell
+python .\build_release.py --release-date 2026-11-09
+```
+
+This standard-library packaging command requires an existing generated bundle;
+it never ingests PDFs, scans pagination, or rebuilds evidence. It creates a
+DEFLATE level-6 ZIP, a `.zip.sha256` checksum, and a `_release_manifest.json`
+inventory under `release/`. ZIP64 is supported. Existing release targets are
+never overwritten, and previous release files are preserved.
+
+The packager validates pagination, hashes every input, compares existing data
+against the latest earlier local release inventory, verifies every ZIP member's
+CRC and SHA-256, and runs a lookup from a disposable extraction without PDFs or
+private caches. Source files are rechecked before final publication. The archive
+contains data only; the search runtime is copied into the disposable smoke-test
+checkout separately and is not included in the ZIP.
+
+The packaging date controls filenames and release metadata. Evidence counts,
+schema/builder versions, and the source generation timestamp are preserved.
+The default comparison rejects changed/missing previous data and changed source
+snapshot metadata. For a future release with intentional corpus updates, review
+those changes before explicitly passing `--allow-data-changes`. This option is
+not needed for the pagination-only release. No Git commit, push, or GitHub
+publication is performed by the command.
 
 ## Obtain or build the KB bundle
 
